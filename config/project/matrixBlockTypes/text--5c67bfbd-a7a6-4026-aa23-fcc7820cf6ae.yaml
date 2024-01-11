@@ -1,0 +1,46 @@
+field: cf8a59db-2be1-427e-940b-17eb62806f04 # Post Content
+fieldLayouts:
+  1fcd3996-7e35-4fb7-ad5b-2b5cd1ac28ad:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 279137c5-9d7f-4e78-b50e-b342e620e92d # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7e236f9-2b28-4e23-ac69-c8b97140c470
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1df1a5a7-e77c-4037-b577-fa7a151f4734
+        userCondition: null
+fields:
+  279137c5-9d7f-4e78-b50e-b342e620e92d: # Text
+    columnSuffix: vrhnfznl
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 12
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: text
+name: Text
+sortOrder: 1

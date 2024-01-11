@@ -1,0 +1,19 @@
+columnSuffix: uchnbxll
+contentColumnType: text
+fieldGroup: ce0a5db7-7167-43c5-b421-99ca43588394 # Blog
+handle: summary
+instructions: 'Summaries should be one or two sentences'
+name: Summary
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 1
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

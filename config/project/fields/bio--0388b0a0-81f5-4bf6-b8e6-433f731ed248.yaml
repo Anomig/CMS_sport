@@ -1,0 +1,19 @@
+columnSuffix: pooqcqav
+contentColumnType: text
+fieldGroup: c795527e-c982-494f-800b-05e446b52a24 # About
+handle: bio
+instructions: null
+name: Bio
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 8
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
