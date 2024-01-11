@@ -1,0 +1,41 @@
+{% extends '_layout' %}
+
+{# block #}
+{% block content %}
+  <h1>Welcome to our blog dance fanatics! </h1>
+
+   <time datetime="{{ entry.postDate | atom }}">
+    {{ entry.postDate | date }}
+  </time>
+
+{# Load content blocks: #}
+    {% set postContent = entry.postContent.all() %}
+
+    <div class="post-content">
+        {% for contentBlock in postContent %}
+        {% set blockType = contentBlock.type.handle %}
+    
+        {% if blockType == 'text' %}
+        <div class="content-block text">
+            {{ contentBlock.text | md }}
+        </div>
+        {% elseif blockType == 'image' %}
+        {% set image = contentBlock.image.one() %}
+
+        <div class="content-block image">
+            {{ image.getImg() }}
+        </div>
+        {% else %}
+        <div class="content-block unsupported">
+            <p>Unsupported block type: <code>{{ blockType }}</code></p>
+        </div>
+        {% endif %}
+    {% else %}
+
+    <div class="content-block empty">
+      <p>This post has no content!</p>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
